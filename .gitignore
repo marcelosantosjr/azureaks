@@ -1,0 +1,84 @@
+# ==============================
+
+# CLI configuration files
+.terraformrc
+terraform.rc
+
+# Override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Plan files
+*.tfplan
+plan.out
+
+# Sensitive variable files
+*.tfvars
+*.tfvars.json
+
+# Lock file (RECOMENDAÇÃO: versionar em times pequenos)
+# .terraform.lock.hcl
+
+# ==============================
+# Azure
+# ==============================
+
+# Azure CLI tokens
+.azure/
+
+# Local environment files
+.env
+.env.*
+
+# ==============================
+# Kubernetes
+# ==============================
+
+# Kubeconfig
+kubeconfig
+*.kubeconfig
+
+# ==============================
+# IDE / OS
+# ==============================
+
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Windows
+Thumbs.db
+
+# macOS
+.DS_Store
+
+# ==============================
+# Logs
+# ==============================
+
+*.log
+logs/
+
+# ==============================
+# GitHub Actions artifacts locais
+# ==============================
+
+*.zip
+*.tar
+*.tar.gz
+
+# ==============================
+# Segurança adicional
+# ==============================
+
+# Backup files
+*.bak
+*.backup
+
+# Terraform sensitive outputs exportados manualmente
+outputs.json
+.terraform/terraform.tfstate
+.terraform/terraform.tfstate.backup
